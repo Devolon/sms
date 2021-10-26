@@ -1,0 +1,54 @@
+{
+    "name": "devolon/sms",
+    "description": "Devolon SMS package provides a way to send message with different providers",
+    "keywords": [
+        "devolon",
+        "sms"
+    ],
+    "homepage": "https://github.com/devolon/sms",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Amir Modarresi",
+            "email": "amir.modarresi@devolon.fi",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devolon\\Sms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devolon\\Sms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devolon\\Sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Devolon\\Sms\\SmsFacade"
+            }
+        }
+    }
+}
