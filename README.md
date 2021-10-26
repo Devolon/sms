@@ -1,7 +1,7 @@
 # Devolon SMS
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/devolon/sms.svg?style=flat-square)](https://packagist.org/packages/devolon/sms)
-[![Total Downloads](https://img.shields.io/packagist/dt/devolon/sms.svg?style=flat-square)](https://packagist.org/packages/devolon/sms)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/devolon/sms)](https://packagist.org/packages/devolon/sms)
+[![Total Downloads](https://img.shields.io/packagist/dt/devolon/sms)](https://packagist.org/packages/devolon/sms)
 ![GitHub Actions](https://github.com/devolon/sms/actions/workflows/main.yml/badge.svg)
 
 Devolon SMS package provides a way to send message with different providers
