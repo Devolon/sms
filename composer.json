@@ -47,10 +47,7 @@
         "laravel": {
             "providers": [
                 "Devolon\\Sms\\SmsServiceProvider"
-            ],
-            "aliases": {
-                "Sms": "Devolon\\Sms\\SmsFacade"
-            }
+            ]
         }
     }
 }
