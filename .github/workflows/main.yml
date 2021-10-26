@@ -19,7 +19,7 @@ jobs:
                     - laravel: 8.*
                       testbench: ^6.6
 
-        name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
+        name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.os }}
 
         steps:
             - name: Checkout code
@@ -38,7 +38,7 @@ jobs:
                   echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
             - name: Install dependencies
               run: |
-                  composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-                  composer install --${{ matrix.stability }} --prefer-dist --no-interaction
+                composer require "illuminate/contracts=${{ matrix.laravel }}" --no-update
+                composer update --prefer-dist --no-interaction --no-progress
             - name: Execute tests
               run: vendor/bin/phpunit
