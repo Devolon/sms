@@ -1,4 +1,4 @@
-# Very short description of the package
+# Devolon SMS
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/devolon/sms.svg?style=flat-square)](https://packagist.org/packages/devolon/sms)
 [![Total Downloads](https://img.shields.io/packagist/dt/devolon/sms.svg?style=flat-square)](https://packagist.org/packages/devolon/sms)
