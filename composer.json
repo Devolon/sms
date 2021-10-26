@@ -16,8 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "php": "^8.0",
+        "illuminate/support": "^8.0",
+        "devolon/laravel-common": "^1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -25,7 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Devolon\\Sms\\": "src"
+            "Devolon\\Sms\\": "src",
+            "Devolon\\Sms\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
