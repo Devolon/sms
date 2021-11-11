@@ -2,6 +2,8 @@
 
 namespace Devolon\Sms;
 
+use Devolon\Common\Bases\Repository;
+use Devolon\Sms\Repositories\SmsMessageRepository;
 use Devolon\Sms\Services\Contracts\SMSSenderServiceInterface;
 use Devolon\Sms\Services\ResolveSMSSenderService;
 use Illuminate\Foundation\Application;
@@ -16,6 +18,7 @@ class SmsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->tag(SmsMessageRepository::class, Repository::class);
         $this->app->singleton(ResolveSMSSenderService::class, function (Application $application) {
             /** @var SMSSenderServiceInterface[] $smsSenders */
             $smsSenders = $application->tagged(SMSSenderServiceInterface::class);

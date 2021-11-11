@@ -16,7 +16,7 @@ class SmsMessageRepository extends Repository
         'sender_service',
     ];
 
-    protected function model(): string
+    public function model(): string
     {
         return SmsMessage::class;
     }

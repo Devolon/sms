@@ -2,6 +2,7 @@
 
 namespace Devolon\Sms\Models;
 
+use Devolon\Common\Traits\RepositoryRouteBinding;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +17,7 @@ use Illuminate\Database\Eloquent\Model;
 class SmsMessage extends Model
 {
     use HasFactory;
+    use RepositoryRouteBinding;
 
     protected $table = 'sms_messages';
 }
